@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Formulario en Pure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--cdn para el frameworks pure css-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css">
+    <!--cdn para el frameworks de boostrap para la paginacion -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        form {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <form class="pure-form pure-form-stacked">
+
+        <fieldset>
+            <legend>Formulario en Pure</legend>
+
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="first-name">Nombre:</label>
+                    <input id="first-name" class="pure-u-23-24" type="text" required>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="last-name">Tel:</label>
+                    <input id="last-name" class="pure-u-23-24" type="text" required>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="email">Correo Electronico</label>
+                    <input id="email" class="pure-u-23-24" type="email" placeholder="jcastillog10@ejemplo.com" required>
+                </div>
+                <!--FielSet -->
+            </div>
+            <fieldset>
+                <p>Recoger En:</p>
+                <label for="checkbox-radio-option-two" class="pure-radio">
+                    <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" />
+                    Taxi
+                </label>
+                <label for="checkbox-radio-option-two" class="pure-radio">
+                    <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" />
+                    Tuk TUK
+                </label>
+                <label for="checkbox-radio-option-two" class="pure-radio">
+                    <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" />
+                    Uber
+                </label>
+
+            </fieldset>
+
+
+            <fieldset>
+                <p>Extra:</p>
+                <label for="checkbox-radio-option-one" class="pure-checkbox">
+                    <input type="checkbox" id="checkbox-radio-option-one" value="" required />
+                    Music
+                </label>
+                <label for="checkbox-radio-option-one" class="pure-checkbox">
+                    <input type="checkbox" id="checkbox-radio-option-one" value="" />
+                    Regueton
+                </label>
+                <label for="checkbox-radio-option-one" class="pure-checkbox">
+                    <input type="checkbox" id="checkbox-radio-option-one" value="" />
+                    Chalino Sanchez :)
+                </label>
+            </fieldset>
+            <fieldset>
+
+                <label for="dateofbirth">Fecha y Hora:</label>
+                <input type="date" name="dateofbirth" id="dateofbirth" required>
+            </fieldset>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="state">Recoger En:</label>
+                <select id="state" class="pure-input-1-2">
+                    <option value="" selected="selected">Seleccone una opcion</option>
+                    <option value="Oficiona">Oficiona</option>
+                    <option value="feria">feria</option>
+                    <option value="la_U">La u</option>
+                    <option value="nose">le digo al cacho</option>
+                </select>
+            </div>
+            <P></P>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="state">Dejar En:</label>
+                <select id="state" class="pure-input-1-2">
+                    <option value="" selected="selected">Seleccone una opcion</option>
+                    <option value="Aeropuerto">Aeropuerto</option>
+                    <option value="Playa">Playa</option>
+                    <option value="Biblioteca">Biblioteca</option>
+                    <option value="Biblioteca">Antigua</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Hacer un Comentario:</p>
+                <textarea id="message" class="form-field" placeholder="Comente:" rows="6" required></textarea>
+                <label for="message" class="form-label"></label>
+            </div>
+
+            <button type="submit" class="pure-button pure-button-primary">Hacer Cita</button>
+
+    </form>
+    <!--Paginacion en boostrp-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="/Index.html" aria-label="Inicio">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Inicio</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="/Index.html">Inicio</a></li>
+            <li class="page-item"><a class="page-link" href="Boostrap.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="bulma.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="tailwind.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="FundationCss.html">4</a></li>
+            <li class="page-item">
+                <a class="page-link" href="FundationCss.html" aria-label="Siguiente">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

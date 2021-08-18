@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario en tailwind css</title>
+  <!--Cdn para el forms-->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!--cdn unicamente para paginacion boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-10 flex flex-col">
+  <div class="-mx-2 md:flex mt-2">
+    <div class="md:w-full px-3">
+      <button
+        class="md:w 40 bg-gray-900 text-blue-300 font-bold py-9 px-10 border-b-100 hover:border-b-2 border-gray-5 hover:border-gray-500 rounded-full">
+        FRAMEWORKS TAILWIND CSS
+      </button>
+    </div>
+  </div>
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+    <div>
+      <div class="-mx-3 md:flex mb-6">
+        <div class="md:w-full px-3">
+          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="Nombre">
+            Ingrese su Nombre:
+          </label>
+          <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="Nombre"
+            type="text" placeholder="Nombre:" required>
+        </div>
+      </div>
+      <div class="-mx-3 md:flex mb-6">
+        <div class="md:w-full px-3">
+          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="Telefono">
+            Ingrese su Telefono:
+          </label>
+          <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="Telefono"
+            type="text" placeholder="Tel:" required>
+        </div>
+      </div>
+      <div class="-mx-3 md:flex mb-6">
+        <div class="md:w-full px-3">
+          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2">
+            Ingrese Su Correo:
+          </label>
+          <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="correo"
+            type="email" class="form-input mt-1 block w-full" placeholder="john@example.com" required>
+        </div>
+      </div>
+
+
+      <div class="block">
+        <span class="text-gray-700">Que taxi quiere:</span>
+        <div class="mt-2">
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio text-indigo-600" name="radio-colors" value="1" id="taxi">
+              <span class="ml-2">Taxi</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio text-green-500" name="radio-colors" value="2" id="Tuk">
+              <span class="ml-2">Tuk Tuk</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio text-pink-600" name="radio-colors" value="3" id="Suv">
+              <span class="ml-2">Suv</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" class="form-radio text-pink-600" name="radio-colors" value="3" id="Uber">
+              <span class="ml-2">Uber</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <span class="text-gray-700">Extras:</span>
+        <div class="mt-2">
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class="form-checkbox" id="Musica">
+              <span class="ml-2">Musica</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class="form-checkbox" id="NoRegueton">
+              <span class="ml-2">No regueton</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class="form-checkbox" id="Chela">
+              <span class="ml-2">Una Chela :G</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-3 md:flex mb-2">
+        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
+            Lugar Para Recoger:
+          </label>
+          <div>
+            <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+              id="location">
+              <option selected>Seleccione la Opcion</option>
+              <option value="Oficina">Oficina</option>
+              <option value="Feria">Feria</option>
+              <option value="La U">La U</option>
+              <option value="Pa' mi casa :)">Pa' mi casa :)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-3 md:flex mb-2">
+        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
+            Dejar En:
+          </label>
+          <div>
+            <input type="text" name="dejar_en" required list="destino"
+              class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+              id="destino" />
+            <datalist id="destino">
+              <datalist id="destino">
+                <option value="Aeropuerto"></option>
+                <option value="Biblioteca"></option>
+                <option value="Playa"></option>
+                <option value="Antigua Guatemala :) "></option>
+                <datalist>
+          </div>
+        </div>
+      </div>
+
+      <div class="-mx-3 md:flex mb-2">
+        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="block">
+            Hacer un Comentario:
+            <textarea class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+              placeholder="ingrese comentario:"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="-mx-3 md:flex mt-2">
+        <div class="md:w-full px-3">
+          <button
+            class="md:w-20 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">
+            Enviar
+          </button>
+        </div>
+      </div>
+      <p></p>
+    </div>
+
+    </div>
+  </form>
+  <!--paginacion en boostrap-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="/Index.html" aria-label="Inicio">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Inicio</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="/Index.html">Inicio</a></li>
+      <li class="page-item"><a class="page-link" href="bulma.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="Boostrap.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="PureCss.html">4</a></li>
+      <li class="page-item"><a class="page-link" href="FundationCss.html">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="bulma.html" aria-label="Siguiente">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+
+</body>
+
+</html>
